@@ -54,7 +54,7 @@ exports.template = function(grunt, init, done) {
             props.svn_project = suffix.slice(0, slash);
             props.svn_suffix = suffix.slice(slash + 1);
             if(props.svn_suffix.lastIndexOf('/') === props.svn_suffix.length - 1){
-                props.svn_suffix.splice(props.svn_suffix.length - 1, 1);
+                props.svn_suffix = props.svn_suffix.slice(0, -1);
             }
         }
     }
