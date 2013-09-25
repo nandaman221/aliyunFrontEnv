@@ -1,0 +1,69 @@
+{
+    "options": {
+        "repository":    "http://svn.alibaba-inc.com/repos/ali_yun/static/",
+        "path":         "./"
+    },
+    "static_cloudeye": {
+        "map": {
+            "css/cloudeye": "static_cloudeye/trunk/css/cloudeye",
+            "js/cloudeye": "static_cloudeye/trunk/js/cloudeye",
+            "images/cloudeye": "static_cloudeye/trunk/images/cloudeye"
+        }
+    },
+    "static_console": {
+        "map": {
+            "css/console": "static_console/trunk/css/console",
+            "js/console": "static_console/trunk/js/console",
+            "images/console": "static_console/trunk/images/console"
+        }
+    },
+    "static_common": {
+        "map": {
+            "css/common": "static_common_aliyun_com/trunk/css/common",
+            "js/common": "static_common_aliyun_com/trunk/js/common",
+            "images/common": "static_common_aliyun_com/trunk/images/common"
+        }
+    },
+    "static_ace_aliyun_com": {
+        "map": {
+            "css/ace": "static_ace_aliyun_com/trunk/css/ace",
+            "js/ace": "static_ace_aliyun_com/trunk/js/ace",
+            "images/ace": "static_ace_aliyun_com/trunk/images/ace"
+        }
+    },
+    "static_cdn_aliyun_com": {
+        "map": {
+            "css/cdn": "static_cdn_aliyun_com/trunk/css/cdn",
+            "js/cdn": "static_cdn_aliyun_com/trunk/js/cdn",
+            "images/cdn": "static_cdn_aliyun_com/trunk/images/cdn"
+        }
+    },
+    "static_lib_aliyun_com": {
+        "map": {
+            "css/lib": "static_lib_aliyun_com/trunk/css/lib",
+            "js/lib": "static_lib_aliyun_com/trunk/js/lib",
+            "images/lib": "static_lib_aliyun_com/trunk/images/lib"
+        }
+    },
+    "static_user-center_aliyun_com": {
+        "map": {
+            "css/user-center": "static_user-center_aliyun_com/trunk/css/user-center",
+            "js/user-center": "static_user-center_aliyun_com/trunk/js/user-center",
+            "images/user-center": "static_user-center_aliyun_com/trunk/images/user-center"
+        }
+    },
+    "static_user-console_aliyun_com": {
+        "map": {
+            "css/user-console": "static_user-console_aliyun_com/trunk/css/user-console",
+            "js/user-console": "static_user-console_aliyun_com/trunk/js/user-console",
+            "images/user-console": "static_user-console_aliyun_com/trunk/images/user-console"
+        }
+    },
+    "{%= svn_project %}": {
+        "map": {
+            "css/{%= svn_appName %}": "{%= svn_project %}/{%= svn_suffix %}/css/{%= svn_appName %}",
+            "js/{%= svn_appName %}": "{%= svn_project %}/{%= svn_suffix %}/js/{%= svn_appName %}",
+            "images/{%= svn_appName %}": "{%= svn_project %}/{%= svn_suffix %}/images/{%= svn_appName %}"
+        }
+    }
+}
