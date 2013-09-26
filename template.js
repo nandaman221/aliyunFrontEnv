@@ -81,7 +81,8 @@ exports.template = function(grunt, init, done) {
             "grunt-contrib-watch": "~0.5.3",
             "grunt-contrib-connect": "~0.5.0",
             "grunt-open": "~0.2.2",
-            "grunt-svn-fetch": "~0.1.2"
+            "grunt-svn-fetch": "~0.1.2",
+            "matchdep": "~0.1.2"
         }
     });
 
