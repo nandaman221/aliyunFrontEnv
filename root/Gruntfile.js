@@ -66,7 +66,7 @@ module.exports = function(grunt) {
         connect: {
             options: {
                 port: '80',
-                hostname: '127.0.0.1'
+                hostname: '*'
             },
             livereload: {
                 options: {
@@ -77,8 +77,8 @@ module.exports = function(grunt) {
         },
         open: {
             index: {
-                path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/demo',
-                app: 'Firefox'
+                path: 'http://127.0.0.1:<%= connect.options.port %>/demo',
+                app: 'Google Chrome'
             }
         },
         svn_fetch: grunt.file.readJSON('svn.json')
@@ -87,6 +87,9 @@ module.exports = function(grunt) {
     // Default task.
     grunt.registerTask('default', [
         'connect:livereload', 'open:index', 'watch'
+    ]);
+    grunt.registerTask('release', [
+        'connect:livereload:keepalive'
     ]);
     // Get SVN resources.
     grunt.registerTask('getsvn', [
